@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Wellness Gym Purwokerto | Gym, Kelas & Personal Trainer</title>
+<meta name="description" content="Wellness Gym Purwokerto menyediakan membership gym, berbagai kelas olahraga, fasilitas gym, dan Personal Trainer. Temukan harga, jadwal kelas, lokasi, dan hubungi kami.">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://zrdt-merch.github.io/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zrdt-merch.github.io/">
+<meta property="og:title" content="Wellness Gym Purwokerto | Gym, Kelas & Personal Trainer">
+<meta property="og:description" content="Wellness Gym Purwokerto menyediakan membership gym, berbagai kelas olahraga, fasilitas gym, dan Personal Trainer.">
+<meta property="og:image" content="https://zrdt-merch.github.io/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Wellness Gym Purwokerto | Gym, Kelas & Personal Trainer">
+<meta name="twitter:description" content="Wellness Gym Purwokerto menyediakan membership gym, berbagai kelas olahraga, fasilitas gym, dan Personal Trainer.">
+
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="manifest" href="site.webmanifest">
+
+<style>
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0; padding: 0; width: 100%;
+    overflow-x: hidden;
+    background: #F8F7FB;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  #gym-frame {
+    display: block;
+    width: 100%;
+    border: 0;
+    overflow: hidden;
+    min-height: 100vh;
+  }
+  .fallback-note {
+    display: none;
+    padding: 24px; text-align: center; color: #211A31;
+  }
+  .fallback-note a { color: #35146F; font-weight: 600; }
+  noscript .fallback-note { display: block; }
+</style>
+</head>
+<body>
+
+<iframe
+  id="gym-frame"
+  src="https://script.google.com/macros/s/AKfycbywt7Ns8OqXUrXupagF9nTUSyCr4cTX42Lg0zG8qqSOloFgrfFqf4qiyer0UAKIlCM-2g/exec"
+  title="Wellness Gym Purwokerto — Website"
+  loading="eager"
+  scrolling="no"
+  allow="clipboard-write">
+</iframe>
+
+<noscript>
+  <div class="fallback-note">
+    Halaman ini memerlukan JavaScript. Silakan buka langsung
+    <a href="https://script.google.com/macros/s/AKfycbywt7Ns8OqXUrXupagF9nTUSyCr4cTX42Lg0zG8qqSOloFgrfFqf4qiyer0UAKIlCM-2g/exec">Wellness Gym Web App</a>.
+  </div>
+</noscript>
+
+<script>
+(function () {
+  'use strict';
+  var frame = document.getElementById('gym-frame');
+  if (!frame) return;
+
+  // Fallback: if resize message never arrives, keep min-height 100vh (already set via CSS).
+  window.addEventListener('message', function (event) {
+    // Validate message shape; origin validation is limited because Apps Script
+    // Web App origins vary (script.google.com / googleusercontent.com) and can
+    // change between deployments, so we validate the payload contract instead.
+    var msg = event.data;
+    if (!msg || msg.type !== 'wg-resize' || typeof msg.height !== 'number') return;
+    if (msg.height > 0) {
+      frame.style.height = msg.height + 'px';
+    }
+  }, false);
+})();
+</script>
+
+</body>
+</html>
